@@ -1,6 +1,6 @@
 Stream Sanitizer
 ================
-Wraps [`strvisx(3)`][https://man.openbsd.org/strvisx.3] to sanitize untrusted
+Wraps [`strvisx(3)`](https://man.openbsd.org/strvisx.3) to sanitize untrusted
 input for display on a fancypants terminal which might interpret escape
 sequences unsafely, originally for displaying honeypot output in real time.
 
