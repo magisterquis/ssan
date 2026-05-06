@@ -23,7 +23,15 @@ Quickstart
     ```sh
     dangerousthing | ./ssan
     ```
-    
+
+Why not [vis(1)](https://man.openbsd.org/vis.1)?
+------------------------------------------------
+It has a one-character read buffer and a line-oriented output buffer, which
+works out to the output buffer being one character behind the input stream.
+When that one character is a newline, the line-buffered output line isn't
+printed.  With a long-running stream, works out to always being one line
+behind.
+
 Building on Linux
 -----------------
 Probably requires libbsd?
